@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/bulma.css">
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/lm.js"></script>
+</head>
+<body>
+	<section class="hero">
+		<img src="image/lordsMobileHeader.jpg">
+	</section>
+
+	<section class="hero is-success">
+		<section class="section">
+			<div class="container">
+				<h1 class="has-text-centered" style="font-size: 64px;">Lords Mobile Calculator</h1>
+			</div>
+		</section>
+	</section>
+
+	<section class="hero is-white">
+		<section class="section">
+			<div class="container">
+				<div class="columns">
+					<div class="column is-6">
+						<h1 style="font-size: 48px;"><u>Speed Up</u></h1>
+					</div>
+
+					<div class="column is-2 is-offset-3">
+						<input id="outputTotalSpeedUp" class="input" type="text" disabled="true">
+					</div>
+
+					<div class="column">
+						days
+					</div>
+				</div>
+
+				<div class="columns">
+					<div class="column is-2">
+						Type of Speed Up
+					</div>
+
+					<div class="column is-2">
+						Enter Number of Speed Up
+					</div>
+
+					<div class="column is-2">
+						No. of Speed Up
+					</div>
+
+					<div class="column is-2">
+						Type of Speed Up
+					</div>
+
+					<div class="column is-2">
+						Enter Number of Speed Up
+					</div>
+
+					<div class="column is-2">
+						No. of Speed Up
+					</div>
+				</div>
+
+				<div class="columns">
+					<div class="column is-2">
+						<img src="image/1min.jpg">
+					</div>
+
+					<div class="column is-2">
+						<input class="input" tabindex="1" type="text" placeholder="Input number of Speed Up" oninput="SpeedUpConverter1min(this.value)">
+					</div>
+
+					<div class="column">
+						<input id="output1min" class="input" type="text" disabled="true">
+					</div>
+
+					<div class="column">
+						hrs
+					</div>
+
+					<div class="column is-2">
+						<img src="image/3hr.jpg">
+					</div>
+
+					<div class="column is-2">
+						<input class="input" tabindex="8" type="text" placeholder="Input number of Speed Up" oninput="SpeedUpConverter3hr(this.value)">
+					</div>
+
+					<div class="column">
+						<input id="output3hr" class="input" type="text" disabled="true">
+					</div>
+
+					<div class="column">
+						hrs
+					</div>
+				</div>
+
+				<div class="columns">
+					<div class="column is-2">
+						<img src="image/3min.jpg">
+					</div>
+
+					<div class="column is-2">
+						<input class="input" tabindex="2" type="text" placeholder="Input number of Speed Up" oninput="SpeedUpConverter3min(this.value)">
+					</div>
+
+					<div class="column">
+						<input id="output3min" class="input" type="text" disabled="true">
+					</div>
+
+					<div class="column">
+						hrs
+					</div>
+
+					<div class="column is-2">
+						<img src="image/8hr.jpg">
+					</div>
+
+					<div class="column is-2">
+						<input class="input" tabindex="9" type="text" placeholder="Input number of Speed Up" oninput="SpeedUpConverter8hr(this.value)">
+					</div>
+
+					<div class="column">
+						<input id="output8hr" class="input" type="text" disabled="true">
+					</div>
+
+					<div class="column">
+						hrs
+					</div>
+				</div>
+
+				<div class="columns">
+					<div class="column is-2">
+						<img src="image/5min.jpg">
+					</div>
+
+					<div class="column is-2">
+						<input class="input" tabindex="3" type="text" placeholder="Input number of Speed Up" oninput="SpeedUpConverter5min(this.value)">
+					</div>
+
+					<div class="column">
+						<input id="output5min" class="input" type="text" disabled="true">
+					</div>
+
+					<div class="column">
+						hrs
+					</div>
+
+					<div class="column is-2">
+						<img src="image/15hr.jpg">
+					</div>
+
+					<div class="column is-2">
+						<input class="input" tabindex="10" type="text" placeholder="Input number of Speed Up" oninput="SpeedUpConverter15hr(this.value)">
+					</div>
+
+					<div class="column">
+						<input id="output15hr" class="input" type="text" disabled="true">
+					</div>
+
+					<div class="column">
+						hrs
+					</div>
+				</div>
+
+				<div class="columns">
+					<div class="column is-2">
+						<img src="image/10min.jpg">
+					</div>
+
+					<div class="column is-2">
+						<input class="input" tabindex="4" type="text" placeholder="Input number of Speed Up" oninput="SpeedUpConverter10min(this.value)">
+					</div>
+
+					<div class="column">
+						<input id="output10min" class="input" type="text" disabled="true">
+					</div>
+
+					<div class="column">
+						hrs
+					</div>
+
+					<div class="column is-2">
+						<img src="image/24hr.jpg">
+					</div>
+
+					<div class="column is-2">
+						<input class="input" tabindex="11" type="text" placeholder="Input number of Speed Up" oninput="SpeedUpConverter24hr(this.value)">
+					</div>
+
+					<div class="column">
+						<input id="output24hr" class="input" type="text" disabled="true">
+					</div>
+
+					<div class="column">
+						hrs
+					</div>
+				</div>
+
+				<div class="columns">
+					<div class="column is-2">
+						<img src="image/15min.jpg">
+					</div>
+
+					<div class="column is-2">
+						<input class="input" tabindex="5" type="text" placeholder="Input number of Speed Up" oninput="SpeedUpConverter15min(this.value)">
+					</div>
+
+					<div class="column">
+						<input id="output15min" class="input" type="text" disabled="true">
+					</div>
+
+					<div class="column">
+						hrs
+					</div>
+
+					<div class="column is-2">
+						<img src="image/3d.jpg">
+					</div>
+
+					<div class="column is-2">
+						<input class="input" tabindex="12" type="text" placeholder="Input number of Speed Up" oninput="SpeedUpConverter3d(this.value)">
+					</div>
+
+					<div class="column">
+						<input id="output3d" class="input" type="text" disabled="true">
+					</div>
+
+					<div class="column">
+						days
+					</div>
+				</div>
+
+				<div class="columns">
+					<div class="column is-2">
+						<img src="image/30min.jpg">
+					</div>
+
+					<div class="column is-2">
+						<input class="input" tabindex="6" type="text" placeholder="Input number of Speed Up" oninput="SpeedUpConverter30min(this.value)">
+					</div>
+
+					<div class="column">
+						<input id="output30min" class="input" type="text" disabled="true">
+					</div>
+
+					<div class="column">
+						hrs
+					</div>
+
+					<div class="column is-2">
+						<img src="image/7d.jpg">
+					</div>
+
+					<div class="column is-2">
+						<input class="input" tabindex="13" type="text" placeholder="Input number of Speed Up" oninput="SpeedUpConverter7d(this.value)">
+					</div>
+
+					<div class="column">
+						<input id="output7d" class="input" type="text" disabled="true">
+					</div>
+
+					<div class="column">
+						days
+					</div>
+				</div>
+
+				<div class="columns">
+					<div class="column is-2">
+						<img src="image/60min.jpg">
+					</div>
+
+					<div class="column is-2">
+						<input class="input" tabindex="7" type="text" placeholder="Input number of Speed Up" oninput="SpeedUpConverter60min(this.value)">
+					</div>
+
+					<div class="column">
+						<input id="output60min" class="input" type="text" disabled="true">
+					</div>
+
+					<div class="column">
+						hrs
+					</div>
+
+					<div class="column is-2">
+						<img src="image/30d.jpg">
+					</div>
+
+					<div class="column is-2">
+						<input class="input" tabindex="14" type="text" placeholder="Input number of Speed Up" oninput="SpeedUpConverter30d(this.value)">
+					</div>
+
+					<div class="column">
+						<input id="output30d" class="input" type="text" disabled="true">
+					</div>
+
+					<div class="column">
+						days
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+
+	<section class="hero is-light">
+		<section class="section">
+			<div class="container">
+				<div class="columns">
+					<div class="column is-6">
+						<h1 style="font-size: 48px;"><u>Research Speed Up</u></h1>
+					</div>
+
+					<div class="column is-2 is-offset-3">
+						<input id="outputTotalRSpeedUp" class="input" type="text" disabled="true">
+					</div>
+
+					<div class="column">
+						days
+					</div>
+				</div>
+
+				<div class="columns">
+					<div class="column is-2">
+						Type of Speed Up
+					</div>
+
+					<div class="column is-2">
+						Enter Number of Speed Up
+					</div>
+
+					<div class="column is-2">
+						No. of Speed Up
+					</div>
+
+					<div class="column is-2">
+						Type of Speed Up
+					</div>
+
+					<div class="column is-2">
+						Enter Number of Speed Up
+					</div>
+
+					<div class="column is-2">
+						No. of Speed Up
+					</div>
+				</div>
+
+				<div class="columns">
+					<div class="column is-2">
+						<img src="image/r5min.jpg">
+					</div>
+
+					<div class="column is-2">
+						<input class="input" tabindex="15" type="text" placeholder="Input number of Speed Up" oninput="SpeedUpConverterR5min(this.value)">
+					</div>
+
+					<div class="column">
+						<input id="outputR5min" class="input" type="text" disabled="true">
+					</div>
+
+					<div class="column">
+						hrs
+					</div>
+
+					<div class="column is-2">
+						<img src="image/8hr.jpg">
+					</div>
+
+					<div class="column is-2">
+						<input class="input" tabindex="21" type="text" placeholder="Input number of Speed Up" oninput="SpeedUpConverterR8hr(this.value)">
+					</div>
+
+					<div class="column">
+						<input id="outputR8hr" class="input" type="text" disabled="true">
+					</div>
+
+					<div class="column">
+						hrs
+					</div>
+				</div>
+
+				<div class="columns">
+					<div class="column is-2">
+						<img src="image/r10min.jpg">
+					</div>
+
+					<div class="column is-2">
+						<input class="input" tabindex="16" type="text" placeholder="Input number of Speed Up" oninput="SpeedUpConverterR10min(this.value)">
+					</div>
+
+					<div class="column">
+						<input id="outputR10min" class="input" type="text" disabled="true">
+					</div>
+
+					<div class="column">
+						hrs
+					</div>
+
+					<div class="column is-2">
+						<img src="image/r15hr.jpg">
+					</div>
+
+					<div class="column is-2">
+						<input class="input" tabindex="22" type="text" placeholder="Input number of Speed Up" oninput="SpeedUpConverterR15hr(this.value)">
+					</div>
+
+					<div class="column">
+						<input id="outputR15hr" class="input" type="text" disabled="true">
+					</div>
+
+					<div class="column">
+						hrs
+					</div>
+				</div>
+
+				<div class="columns">
+					<div class="column is-2">
+						<img src="image/r15min.jpg">
+					</div>
+
+					<div class="column is-2">
+						<input class="input" tabindex="17" type="text" placeholder="Input number of Speed Up" oninput="SpeedUpConverterR15min(this.value)">
+					</div>
+
+					<div class="column">
+						<input id="outputR15min" class="input" type="text" disabled="true">
+					</div>
+
+					<div class="column">
+						hrs
+					</div>
+
+					<div class="column is-2">
+						<img src="image/24hr.jpg">
+					</div>
+
+					<div class="column is-2">
+						<input class="input" tabindex="23" type="text" placeholder="Input number of Speed Up" oninput="SpeedUpConverterR24hr(this.value)">
+					</div>
+
+					<div class="column">
+						<input id="outputR24hr" class="input" type="text" disabled="true">
+					</div>
+
+					<div class="column">
+						hrs
+					</div>
+				</div>
+
+				<div class="columns">
+					<div class="column is-2">
+						<img src="image/r30min.jpg">
+					</div>
+
+					<div class="column is-2">
+						<input class="input" tabindex="18" type="text" placeholder="Input number of Speed Up" oninput="SpeedUpConverterR30min(this.value)">
+					</div>
+
+					<div class="column">
+						<input id="outputR30min" class="input" type="text" disabled="true">
+					</div>
+
+					<div class="column">
+						hrs
+					</div>
+
+					<div class="column is-2">
+						<img src="image/3d.jpg">
+					</div>
+
+					<div class="column is-2">
+						<input class="input" tabindex="24" type="text" placeholder="Input number of Speed Up" oninput="SpeedUpConverterR3d(this.value)">
+					</div>
+
+					<div class="column">
+						<input id="outputR3d" class="input" type="text" disabled="true">
+					</div>
+
+					<div class="column">
+						days
+					</div>
+				</div>
+
+				<div class="columns">
+					<div class="column is-2">
+						<img src="image/r60min.jpg">
+					</div>
+
+					<div class="column is-2">
+						<input class="input" tabindex="19" type="text" placeholder="Input number of Speed Up" oninput="SpeedUpConverterR60min(this.value)">
+					</div>
+
+					<div class="column">
+						<input id="outputR60min" class="input" type="text" disabled="true">
+					</div>
+
+					<div class="column">
+						hrs
+					</div>
+
+					<div class="column is-2">
+						<img src="image/7d.jpg">
+					</div>
+
+					<div class="column is-2">
+						<input class="input" tabindex="25" type="text" placeholder="Input number of Speed Up" oninput="SpeedUpConverterR7d(this.value)">
+					</div>
+
+					<div class="column">
+						<input id="outputR7d" class="input" type="text" disabled="true">
+					</div>
+
+					<div class="column">
+						days
+					</div>
+				</div>
+
+				<div class="columns">
+					<div class="column is-2">
+						<img src="image/r3hr.jpg">
+					</div>
+
+					<div class="column is-2">
+						<input class="input" tabindex="20" type="text" placeholder="Input number of Speed Up" oninput="SpeedUpConverterR3hr(this.value)">
+					</div>
+
+					<div class="column">
+						<input id="outputR3hr" class="input" type="text" disabled="true">
+					</div>
+
+					<div class="column">
+						hrs
+					</div>
+
+					<div class="column is-2">
+						<img src="image/30d.jpg">
+					</div>
+
+					<div class="column is-2">
+						<input class="input" tabindex="26" type="text" placeholder="Input number of Speed Up" oninput="SpeedUpConverterR30d(this.value)">
+					</div>
+
+					<div class="column">
+						<input id="outputR30d" class="input" type="text" disabled="true">
+					</div>
+
+					<div class="column">
+						days
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+</body>
+</html>
